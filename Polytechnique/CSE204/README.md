@@ -17,3 +17,4 @@ The following lab notebooks were created by another Chef de T.D. and are hosted 
 - Lab 7: [Building a Neural Network From Scratch (Cont.)](Lab7.ipynb) ([solutions](Lab7_answers.ipynb))
 - Lab 8: [Classification of the CIFAR-10 dataset using CNNs](Lab8.ipynb) ([solutions](Lab8_answers.ipynb))
 - Lab 9: [Decision Trees and Ensemble Methods](Lab9.ipynb) ([solutions](Lab9_answers.ipynb))
+- Lab 10: [Dimensionality Reduction with PCA and Autoencoders](Lab10.ipynb) ([solutions](Lab10_answers.ipynb))
