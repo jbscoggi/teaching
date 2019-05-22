@@ -19,3 +19,4 @@ The following lab notebooks were created by another Chef de T.D. and are hosted 
 - Lab 9: [Decision Trees and Ensemble Methods](Lab9.ipynb) ([solutions](Lab9_answers.ipynb))
 - Lab 10: [Dimensionality Reduction with PCA and Autoencoders](Lab10.ipynb) ([solutions](Lab10_answers.ipynb))
 - Lab 11: [Unsupervised Learning: Clustering](Lab11.ipynb) ([solutions](Lab11_answers.ipynb))
+- Lab 13: [Reinforcement Learning II](Lab13.ipynb) ([solutions](Lab13_answers.ipynb))
