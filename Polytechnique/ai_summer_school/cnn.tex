@@ -34,13 +34,16 @@
 
 
 
-\title[Deep Learning]{Convolutional Neural Networks\\
-\small
+\title[AI Summer School - CNNs]{Convolutional Neural Networks\\ \vspace*{2mm}
+\small Summer School in Artificial Intelligence and Data Science\\
+Ecole Polytechnique
 }
 
-\author{E. Scornet}
+\author[J.B. Scoggins]{J.B. Scoggins\\
+\tiny(slides heavily borrowed or outright stolen from Prof. Erwan Scornet)
+}
 
-\date{Fall 2018}
+\date{1-12 July 2019}
 
 \begin{document}
 
@@ -52,9 +55,7 @@
 
 
 \begin{frame}
-	\frametitle{Neural Network reborn}
-
-
+\frametitle{Resurgence of Neural Networks}
 
 \blue{Renewed interest in 2006}:
 \citem{hinton2006fast}
@@ -87,17 +88,13 @@ Propose a way to train deep neural nets:
 
 
 
-
-
-
-
 \begin{frame}
-	\frametitle{Using classical networks for images?}
+\frametitle{Should we use classical (dense) networks for images?}
 
 \blue{No}, for two reasons:
 	\begin{itemize}
-		\item Non robust to image shifting
-		\item Do not take into account the spatial organization of pixels (if the pixels are permuted, the output of the network would be the same, whereas the image would change drastically).
+		\item Not robust to image translation or rotation
+		\item Does not take into account the spatial organization of pixels (if the pixels are permuted, the output of the network would be the same, whereas the image would change drastically).
 	\end{itemize}
 
 \medskip
@@ -110,7 +107,7 @@ Propose a way to train deep neural nets:
 
 \medskip
 
-\blue{Not a new idea}: trace back to perceptron and study about the visual cortex of a cat.
+\blue{Not a new idea}: can be traced back to perceptron and the visual cortex of a cat.
 
 The cat is able to
 \begin{itemize}
@@ -154,7 +151,7 @@ The cat is able to
 
 \subsection{Convolution layer}
 
-\begin{frame}{Convolutional neural networks (CNNs)}
+\begin{frame}{Convolutional Neural Networks (CNNs)}
 	\begin{itemize}
 		\item Neural networks that use \textbf{convolution instead of matrix product} in one of the layers
 
@@ -164,7 +161,7 @@ The cat is able to
 
 		\medskip
 
-		\item Using the more general idea of \textbf{parameters sharing}, instead of \textbf{full connection} (convolution instead of matrix product)
+		\item Using the more general idea of \textbf{parameter sharing}, instead of \textbf{dense connections} (convolution instead of matrix product)
 	\end{itemize}
 
 	\bigskip
@@ -188,7 +185,7 @@ The cat is able to
 
 	\medskip
 
-	\item Size of the kernel is $3 \times 3 \times 1$
+	\item Size of the kernel is $3 \times 3 \times 1$: $k, l \in \{-1, 0, 1\}$
 \end{itemize}
 
 \begin{center}
@@ -196,14 +193,6 @@ The cat is able to
 \end{center}
 
 \end{frame}
-
-
-
-
-
-
-
-
 
 
 
@@ -226,8 +215,9 @@ Warning: every filter is small spatially (along width and height), but extends t
 \end{frame}
 
 
+
 \begin{frame}
-	\frametitle{Parameters for convolutional layer 1/3}
+	\frametitle{Parameters for convolutional layer (1/3)}
 
 	Three hyperparameters control the size of the output volume: the depth, stride and zero-padding.
 
@@ -246,7 +236,7 @@ Warning: every filter is small spatially (along width and height), but extends t
 \end{frame}
 
 \begin{frame}
-	\frametitle{Parameters for convolutional layer 2/3}
+	\frametitle{Parameters for convolutional layer (2/3)}
 
 	Three hyperparameters control the size of the output volume: the depth, stride and zero-padding.
 
@@ -280,7 +270,7 @@ Warning: every filter is small spatially (along width and height), but extends t
 \end{frame}
 
 \begin{frame}
-	\frametitle{Parameters for convolutional layer 3/3}
+	\frametitle{Parameters for convolutional layer (3/3)}
 
 	Three hyperparameters control the size of the output volume: the depth, stride and zero-padding.
 
