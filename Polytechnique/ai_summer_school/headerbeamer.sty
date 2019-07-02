@@ -1,0 +1,73 @@
+\documentclass[warsaw, 9pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage{amsfonts,amsmath}
+\allowdisplaybreaks
+
+
+%% X color
+\definecolor{darkblueX}{RGB}{0,62,92}
+\definecolor{lightblueX}{RGB}{0,104,128}
+\definecolor{verylightblueX}{RGB}{212,232,239}
+\definecolor{redX}{RGB}{169,32,33}
+
+%% Set new default colors
+\setbeamercolor{title}{fg=white, bg=darkblueX}
+\setbeamercolor{frametitle}{fg=darkblueX, bg=white}
+\setbeamercolor{block body}{bg=verylightblueX}%
+\setbeamercolor{block title}{bg=darkblueX,fg=white}%
+\setbeamercolor{structure}{fg=darkblueX,bg=white}
+\setbeamercolor{normal text}{fg=darkblueX,bg=white}%
+
+\setbeamercolor{alerted text}{fg=redX}
+
+
+%% Font
+
+\setbeamerfont{framesubtitle}{size=\tiny}
+\setbeamerfont{alerted text}{shape=\bfseries}
+
+
+
+
+%\usepackage[export]{adjustbox}
+
+% Tighter itemize
+\expandafter\def\expandafter\normalsize\expandafter{%
+    \normalsize%
+    \setlength\abovedisplayskip{1pt}%
+    \setlength\belowdisplayskip{1pt}%
+    \setlength\abovedisplayshortskip{1pt}%
+    \setlength\belowdisplayshortskip{1pt}%
+}
+
+\expandafter\def\expandafter\small\expandafter{%
+    \small%
+    \setlength\abovedisplayskip{1pt}%
+    \setlength\belowdisplayskip{1pt}%
+    \setlength\abovedisplayshortskip{1pt}%
+    \setlength\belowdisplayshortskip{1pt}%
+}
+
+%\usepackage{beamerX}
+\newcommand{\alertmath}[1]{\textcolor{redX}{\boldsymbol{#1}}}
+%\setboolean{displaylogo}{false}
+
+\AtBeginSection[]
+{
+\begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+   \end{frame}
+}
+\AtBeginSubsection[]
+{
+\begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
+
+\setbeamertemplate{frametitle continuation}[from second][]
