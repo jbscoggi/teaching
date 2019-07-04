@@ -5,7 +5,7 @@ J.B. Scoggins
 ### Schedule
 
 - 9:00 - Introduction to CNNs
-- 10:30 - Break (move to lab room)
+- 10:30 - Break (move to computer lab)
 - 11:00 - Practical exercises with CNNs
 
 ### Materials
