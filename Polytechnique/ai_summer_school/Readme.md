@@ -11,5 +11,5 @@ J.B. Scoggins
 ### Materials
 
 - [Lecture notes](https://raw.githubusercontent.com/jbscoggi/teaching/master/Polytechnique/ai_summer_school/cnn.pdf)
-- [Jupyter notebook](https://colab.research.google.com/github/jbscoggi/teaching/blob/master/Polytechnique/ai_summer_school/cnn.ipynb)
+- [Jupyter notebook](https://colab.research.google.com/github/jbscoggi/teaching/blob/master/Polytechnique/ai_summer_school/cnn.ipynb) [(solutions)](https://colab.research.google.com/github/jbscoggi/teaching/blob/master/Polytechnique/ai_summer_school/cnn_answers.ipynb)
 
